@@ -20,11 +20,17 @@
   src: url('../fonts/Neucha-Regular.ttf');
 }
 
+body, h1, h2, h3, p {
+  margin: 0;
+}
+
 body {
+  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
 h1, h2, h3 {
@@ -34,6 +40,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 72px;
+  margin-bottom: 185px;
 }
 
 h2 {
@@ -44,7 +51,65 @@ h3 {
   font-size: 34px;
 }
 
+p {
+  margin-bottom: 13px;
+}
+
 header, nav, section, footer {
+  margin: 0 auto;
   max-width: 1110px;
-  margin: 100px auto;
+  padding: 100px  0;
+}
+
+.columns-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.no-column {
+  column-span: all;
+}
+
+.columns-2 p {
+  break-inside: avoid;
+}
+
+.br-b {
+  break-before: avoid;
+}
+
+.bg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  display: block;
+  height: 100vh;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+header img {
+  position: absolute;
+  top: 55px;
+  right: -270px; 
+  height: 525px;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+button {
+  margin-top: 27px;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  border: none;
 }
