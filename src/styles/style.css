@@ -32,7 +32,7 @@ body {
   color: var(--dark-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, .nav-header, .navigation dt {
   font-family: Neucha, sans-serif;
   font-weight: normal;
   line-height: 1.2em;
@@ -56,7 +56,7 @@ p {
   break-inside: avoid;
 }
 
-header, nav, section, footer {
+header, section, footer, .navigation {
   max-width: 1110px;
   padding: 100px  0;
   margin: 0 auto;
@@ -128,13 +128,73 @@ header img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px 30px;
+  counter-reset: num;
+}
+
+.navigation div {
+  padding: 24px;
+}
+
+.navigation div:first-child {
+  padding: 0;
+}
+
+.navigation dt {
+	font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.navigation dd {
+	margin-inline-start: 0;
+}
+
+.navigation dt::before {
+	content: counter(num);
+  counter-increment: num;
+  font-family: Neucha, sans-serif;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1em;
+  color: var(--main-dark-color);
+  display: block;
+  padding-bottom: 40px;
+}
+
+.navigation div:first-child dt::before {
+	content: '';
+  counter-reset: num;
+  padding: 0;
+}
+
+.nav-header, .nav-header dt {
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+.nav-a {
+  background-color: var(--white-color);
+}
+
 .main-color {
   color: var(--main-color);
+}
+
+.white-color {
+  color: var(--white-color);
 }
 
 .bg-light {
   position: relative;
   background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--main-dark-color);
 }
 
 .overlay {
