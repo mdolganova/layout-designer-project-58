@@ -36,6 +36,7 @@ h1, h2, h3, .nav-header, .navigation dt {
   font-family: Neucha, sans-serif;
   font-weight: normal;
   line-height: 1.2em;
+  color: var(--main-color);
 }
 
 h1 {
@@ -51,19 +52,122 @@ h3 {
   font-size: 34px;
 }
 
-.ikea-effect h2 {
+div img {
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.white-color {
+  color: var(--white-color);
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+
+.brown-color {
+  color: var(--brown-color);
+}
+
+.bg-light {
+  position: relative;
+  background-color: var(--light-color);
+}
+
+.bg-middle {
+  position: relative;
+  background-color: var(--brown-color);  
+}
+
+.bg-dark {
+  background-color: var(--main-dark-color);
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+header img {
+  position: absolute;
+  top: 55px;
+  right: -270px; 
+  height: 525px;
+}
+
+.preview-image img {
+  width: 919px;
+  height: 517px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px 30px;
+  counter-reset: num;
+}
+
+.navigation div {
+  padding: 24px;
+}
+
+.navigation div:first-child {
+  padding: 0;
+}
+
+.navigation dt {
+	font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.navigation dd {
+	margin-inline-start: 0;
+}
+
+.navigation dt::before {
+	content: counter(num);
+  counter-increment: num;
+  font-family: Neucha, sans-serif;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1em;
+  color: var(--main-dark-color);
+  display: block;
+  padding-bottom: 40px;
+}
+
+.navigation div:first-child dt::before {
+	content: '';
+  counter-reset: num;
+  padding: 0;
+}
+
+.nav-header, .nav-header dt {
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+main .bg-middle {
+  color: var(--white-color);
+}
+
+main h2 {
   font-size: 72px;
   margin-bottom: 30px;
 }
 
-.ikea-effect h2::before {
+main .header-content h2::before {
   content: 'Когнитивные искажения';
   display: block;
   font-size: 24px;
   line-height: 1.2em;
 }
 
-.ikea-effect h3 {
+main h3 {
   text-transform: uppercase;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -73,15 +177,10 @@ h3 {
   font-weight: bold;
 }
 
-.ikea-effect .pre {
+main .pre {
   font-size: 34px;
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
-}
-
-.ikea-effect div img {
-  vertical-align: middle;
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 main .bg-light img {
@@ -92,11 +191,11 @@ main .bg-middle img {
   margin-left: 30px;
 }
 
-main .ikea-effect .flex {
+main .header-content {
   display: flex;
 }
 
-main .bg-middle .flex {
+main .bg-middle .header-content {
   flex-direction: row-reverse;
 }
 
@@ -164,97 +263,9 @@ header, section, footer, .navigation {
   opacity: 0.1;
 }
 
-header img {
-  position: absolute;
-  top: 55px;
-  right: -270px; 
-  height: 525px;
-}
 
-.preview-image img {
-  width: 919px;
-  height: 517px;
-  vertical-align: middle;
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-}
 
-.navigation {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 20px 30px;
-  counter-reset: num;
-}
 
-.navigation div {
-  padding: 24px;
-}
-
-.navigation div:first-child {
-  padding: 0;
-}
-
-.navigation dt {
-	font-size: 34px;
-  margin-bottom: 16px;
-}
-
-.navigation dd {
-	margin-inline-start: 0;
-}
-
-.navigation dt::before {
-	content: counter(num);
-  counter-increment: num;
-  font-family: Neucha, sans-serif;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 1em;
-  color: var(--main-dark-color);
-  display: block;
-  padding-bottom: 40px;
-}
-
-.navigation div:first-child dt::before {
-	content: '';
-  counter-reset: num;
-  padding: 0;
-}
-
-.nav-header, .nav-header dt {
-  font-size: 52px;
-  margin-bottom: 0;
-}
-
-.main-color {
-  color: var(--main-color);
-}
-
-.white-color {
-  color: var(--white-color);
-}
-
-.brown-color {
-  color: var(--brown-color);
-}
-
-.bg-light {
-  position: relative;
-  background-color: var(--light-color);
-}
-
-.bg-middle {
-  position: relative;
-  background-color: var(--brown-color);  
-}
-
-.bg-dark {
-  background-color: var(--main-dark-color);
-}
-
-.bg-white {
-  background-color: var(--white-color);
-}
 
 .overlay, .ikea-effect {
   position: relative;
