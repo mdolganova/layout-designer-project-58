@@ -111,21 +111,37 @@ header img {
   counter-reset: num;
 }
 
-.navigation div {
-  padding: 24px;
+.navigation .bg-white {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation dt {
+	font-size: 34px;
+  margin-bottom: 16px;
+  position: relative;
+  padding: 24px 24px 0;
+}
+
+.navigation dd {
+	margin-inline-start: 0;
+  position: relative;
+  padding: 0 24px 24px;
+  flex-grow: 1;
+}
+
+.navigation div:first-child dt,
+.navigation div:first-child dd {
+  padding: 0;
 }
 
 .navigation div:first-child {
   padding: 0;
 }
 
-.navigation dt {
-	font-size: 34px;
-  margin-bottom: 16px;
-}
-
-.navigation dd {
-	margin-inline-start: 0;
+.navigation a {
+  position: absolute;
+  inset: 0;
 }
 
 .navigation dt::before {
@@ -328,6 +344,10 @@ footer form > span {
   font-size: 12px;
 }
 
+footer form a {
+  color: var(--white-color);
+}
+
 footer button {
   margin-top: 0;
   margin-left: -5px;
@@ -355,4 +375,8 @@ footer .copy p {
 
 footer .copy p:last-child {
   margin-bottom: 0;
+}
+
+footer .copy a {
+  color: var(--blue-color);
 }
