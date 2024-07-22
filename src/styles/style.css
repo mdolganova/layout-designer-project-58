@@ -32,7 +32,7 @@ body {
   color: var(--dark-color);
 }
 
-h1, h2, h3, .nav-header, .navigation dt {
+h1, h2, h3, .nav-header, .navigation dt, .footer-h {
   font-family: Neucha, sans-serif;
   font-weight: normal;
   line-height: 1.2em;
@@ -48,7 +48,7 @@ h2 {
   font-size: 60px;
 }
 
-h3 {
+h3,  .footer-h{
   font-size: 34px;
 }
 
@@ -290,4 +290,69 @@ button {
   text-transform: uppercase;
   background-color: var(--main-color);
   border: none;
+}
+
+footer .bg-dark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 190px;
+  padding: 0 55px;
+}
+
+footer span {
+  display: block;
+}
+
+footer label span {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+footer input {
+  height: 50px;
+  padding: 0 15px;
+  width: 385px;
+  font-family: 'Open Sans', sans-serif;
+  color: #757575;
+  border: none;
+  vertical-align: middle;
+  font-size: 13.1px;
+}
+
+footer input::placeholder {
+  color: #e3e3e3;
+}
+
+footer form > span {
+  font-size: 12px;
+}
+
+footer button {
+  margin-top: 0;
+  margin-left: -5px;
+  position: relative;
+  width: 70px;
+  height: 50px;
+  vertical-align: middle;
+  padding: 0;
+}
+
+footer button::before {
+  content: url('../img/send.svg');
+  position: relative;
+  top: 2px;
+}
+
+footer .copy {
+  margin-top: 76px;
+}
+
+footer .copy p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+footer .copy p:last-child {
+  margin-bottom: 0;
 }
