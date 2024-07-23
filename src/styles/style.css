@@ -42,7 +42,7 @@ h1, h2, h3, .nav-header, .navigation dt, .footer-h {
 
 h1 {
   font-size: 72px;
-  margin-bottom: 190px;
+  margin-bottom: 195px;
 }
 
 h2 {
@@ -322,8 +322,11 @@ main .bg-middle .header-content {
 
 button {
   margin-top: 27px;
+  height: 50px;
+  width: 150px;
   padding: 12px 24px;
   font-weight: bold;
+  line-height: 1.6;
   color: var(--white-color);
   text-transform: uppercase;
   background-color: var(--main-color);
