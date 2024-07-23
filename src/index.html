@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Когнитивные искажения | Мария Долганова</title>
-
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -16,7 +15,9 @@
             <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
             <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
             <p class = "br-b">Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-            <button>Подробнее</button>
+            <form action="#navigation">
+                <button class="zi-100">Подробнее</button>
+            </form>
         </header>
     </div>
     <div class="bg-white overlay">
@@ -26,7 +27,7 @@
             <div><a href="https://www.youtube.com/" target="_blank"><img alt = "Когнитивные искажения Petrovna Channel" class="m0-a db" src="img/preview.png"></a></div>
         </section>
     </div>
-    <nav class="bg-dark">
+    <nav id="navigation" class="bg-dark">
         <dl class="navigation">
             <div class="nav-header">
                 <dt>5 когнитивных искажений</dt>
@@ -140,7 +141,7 @@
     <footer>
         <div class="bg-dark white-color">
             <p class="footer-h white-color">Хотите узнать больше?<br>Подпишитесь на обновления</p>
-            <form>
+            <form action="index.html">
                 <label>
                     <span>Электронная почта</span>
                     <input type="email" placeholder="Ваша электронная почта">
