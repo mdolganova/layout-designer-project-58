@@ -112,6 +112,10 @@ header, section, footer, .navigation {
   column-gap: 30px;
 }
 
+main .columns-2 {
+  margin-bottom: -16px;
+}
+
 .no-column {
   column-span: all;
 }
@@ -129,7 +133,7 @@ header, section, footer, .navigation {
 }
 
 .mb-31 {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .db {
