@@ -42,7 +42,7 @@ h1, h2, h3, .nav-header, .navigation dt, .footer-h {
 
 h1 {
   font-size: 72px;
-  margin-bottom: 198px;
+  margin-bottom: 190px;
 }
 
 h2 {
@@ -147,6 +147,10 @@ header, section, footer, .navigation {
 .zi-100 {
   position: relative;
   z-index: 100;
+}
+
+header {
+  position: relative;
 }
 
 header img {
