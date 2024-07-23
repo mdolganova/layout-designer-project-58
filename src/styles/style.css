@@ -171,6 +171,7 @@ header img {
   grid-template-rows: repeat(3, auto);
   gap: 20px 30px;
   counter-reset: num;
+  padding-bottom: 80px;
 }
 
 .navigation .bg-white {
