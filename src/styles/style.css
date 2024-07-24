@@ -160,6 +160,11 @@ p {
   padding-bottom: 0;
 }
 
+.preview-image div {
+  position: relative;
+  top: 1px;
+}
+
 .preview-image img {
   width: 919px;
   height: 517px;
