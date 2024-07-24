@@ -160,9 +160,8 @@ p {
   padding-bottom: 0;
 }
 
-.preview-image div {
-  position: relative;
-  top: 1px;
+.preview-image p {
+  margin-bottom: 31px;
 }
 
 .preview-image img {
