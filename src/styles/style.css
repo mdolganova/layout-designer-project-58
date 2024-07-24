@@ -424,3 +424,147 @@ footer .copy p:last-child {
 footer .copy a {
   color: var(--blue-color);
 }
+
+@media screen and (width <= 1150px) {
+  img,
+  .preview-image img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header h1 {
+    margin-bottom: 30px;
+  }
+
+  .header img {
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+    right: 0;
+  }
+
+  .header form {
+    column-span: all;
+    text-align: center;
+  }
+
+  .header,
+  section,
+  .footer,
+  .navigation {
+    padding: 100px 20px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navigation div {
+    width: 100%;
+  }
+
+  .header-content,
+  main .bg-middle .header-content {
+    flex-direction: column-reverse;
+  }
+
+  .header-content div:first-child {
+    text-align: center;
+  }
+
+  main .bg-middle img,
+  main .bg-light img {
+    margin: 0;
+  }
+
+  main h3 {
+    margin-top: 30px;
+  }
+
+  footer .bg-dark {
+    flex-direction: column;
+    height: auto;
+    padding: 50px;
+  }
+}
+
+@media screen and (width <= 630px) {
+  .columns-2 {
+    column-count: 1;
+  }
+
+  .header,
+  section,
+  .footer,
+  .navigation {
+    padding: 70px 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    word-break: break-all;
+  }
+
+  h3,
+  .navigation dt,
+  main .pre {
+    font-size: 26px;
+  }
+
+  h2,
+  .nav-header,
+  .nav-header dt,
+  main h2 {
+    font-size: 34px;
+  }
+
+  .navigation dt::before {
+    font-size: 26px;
+    padding-bottom: 15px;
+  }
+
+  main .header-content h2::before {
+    font-size: 20px;
+  }
+
+  footer form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer form,
+  footer label,
+  footer input,
+  footer button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer button {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  footer .copy {
+    margin-top: 46px;
+  }
+}
+
+@media screen and (width <= 300px) {
+  h3,
+  .navigation dt,
+  main .pre,
+  h2,
+  .nav-header,
+  .nav-header dt,
+  main h2 {
+    word-break: break-all;
+  }
+}
