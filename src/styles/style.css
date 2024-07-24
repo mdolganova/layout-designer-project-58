@@ -96,6 +96,10 @@ div > img {
   background-color: var(--white-color);
 }
 
+.bgn-light {
+  background-color: var(--light-color);
+}
+
 p {
   margin-bottom: 16px;
   break-inside: avoid;
