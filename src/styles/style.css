@@ -13,27 +13,36 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Regular.ttf');
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: Neucha;
-  src: url('../fonts/Neucha-Regular.ttf');
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark-color);
 }
 
-h1, h2, h3, .nav-header, .navigation dt, .footer-h {
+h1,
+h2,
+h3,
+.nav-header,
+.navigation dt,
+.footer-h {
   font-family: Neucha, sans-serif;
   font-weight: normal;
   line-height: 1.2em;
@@ -49,7 +58,8 @@ h2 {
   font-size: 60px;
 }
 
-h3,  .footer-h{
+h3,
+.footer-h {
   font-size: 34px;
 }
 
@@ -85,7 +95,7 @@ div > img {
 
 .bg-middle {
   position: relative;
-  background-color: var(--brown-color);  
+  background-color: var(--brown-color);
 }
 
 .bg-dark {
@@ -105,9 +115,12 @@ p {
   break-inside: avoid;
 }
 
-.header, section, .footer, .navigation {
+.header,
+section,
+.footer,
+.navigation {
   max-width: 1110px;
-  padding: 100px  0;
+  padding: 100px 0;
   margin: 0 auto;
 }
 
@@ -156,7 +169,7 @@ p {
 .header img {
   position: absolute;
   top: 55px;
-  right: -270px; 
+  right: -270px;
   height: 525px;
 }
 
@@ -198,20 +211,21 @@ nav {
 }
 
 .navigation dt {
-	font-size: 34px;
+  font-size: 34px;
   margin-bottom: 16px;
   position: relative;
   padding: 24px 24px 0;
 }
 
 .navigation dd {
-	margin-inline-start: 0;
+  margin-inline-start: 0;
   position: relative;
   padding: 0 24px 24px;
   flex-grow: 1;
 }
 
-.nav-header, .nav-header dt {
+.nav-header,
+.nav-header dt {
   font-size: 52px;
   margin-bottom: 0;
 }
@@ -222,7 +236,7 @@ nav {
 }
 
 .navigation dt::before {
-	content: counter(num);
+  content: counter(num);
   counter-increment: num;
   font-family: Neucha, sans-serif;
   font-weight: normal;
@@ -234,18 +248,16 @@ nav {
 }
 
 .navigation div:first-child dt::before {
-	content: '';
+  content: "";
   counter-reset: num;
   padding: 0;
 }
 
 .navigation .bg-white:hover,
 .navigation .bg-white:hover dt,
-.navigation .bg-white:hover dt::before
-.navigation .bg-white:focus,
+.navigation .bg-white:hover dt::before .navigation .bg-white:focus,
 .navigation .bg-white:focus dt,
-.navigation .bg-white:focus dt::before
-.navigation .bg-white:active,
+.navigation .bg-white:focus dt::before .navigation .bg-white:active,
 .navigation .bg-white:active dt,
 .navigation .bg-white:active dt::before {
   color: var(--white-color);
@@ -275,7 +287,7 @@ main h2 {
 }
 
 main .header-content h2::before {
-  content: 'Когнитивные искажения';
+  content: "Когнитивные искажения";
   display: block;
   font-size: 24px;
   line-height: 1.2em;
@@ -286,7 +298,7 @@ main h3 {
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
@@ -313,12 +325,13 @@ main .bg-middle .header-content {
   flex-direction: row-reverse;
 }
 
-.bg-light::before, .bg-middle::before {
-  content: '';
+.bg-light::before,
+.bg-middle::before {
+  content: "";
   position: absolute;
   inset: 0;
   display: block;
-  background-image: url('../img/background.png');
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -374,7 +387,7 @@ footer input {
   height: 50px;
   padding: 0 15px;
   width: 385px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #757575;
   border: none;
   vertical-align: middle;
@@ -390,7 +403,7 @@ footer form > span {
 }
 
 footer button::before {
-  content: url('../img/send.svg');
+  content: url("../img/send.svg");
   position: relative;
   top: 2px;
 }
