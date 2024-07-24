@@ -101,7 +101,7 @@ p {
   break-inside: avoid;
 }
 
-.header, section, footer, .navigation {
+.header, section, .footer, .navigation {
   max-width: 1110px;
   padding: 100px  0;
   margin: 0 auto;
@@ -185,6 +185,7 @@ nav {
   gap: 20px 30px;
   counter-reset: num;
   padding-bottom: 80px;
+  padding-top: 99px;
 }
 
 .navigation .bg-white {
