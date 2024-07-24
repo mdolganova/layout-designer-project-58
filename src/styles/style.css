@@ -160,13 +160,21 @@ p {
   padding-bottom: 0;
 }
 
-.preview-image p {
-  margin-bottom: 31px;
+.preview-image div {
+  position: relative;
+  top: 1px;
+  z-index: 100;
 }
 
 .preview-image img {
   width: 919px;
   height: 517px;
+}
+
+nav {
+  position: relative;
+  top: -100px;
+  padding-top: 100px;
 }
 
 .navigation {
@@ -308,21 +316,6 @@ main .bg-middle .header-content {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-}
-
-.overlay {
-  position: relative;
-}
-
-.overlay::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  height: 100px;
-  background-color: var(--main-dark-color);
 }
 
 button {
